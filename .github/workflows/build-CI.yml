@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '0 21 * * 5'
   workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: true
+        default: 'true'
     
 env:
   TZ: 'Asia/Shanghai'
@@ -36,6 +41,9 @@ jobs:
         run: |
           chmod +x $CONFIG
           ./$CONFIG
+          
+      - name: SSH connection to Actions
+        uses: P3TERX/ssh2actions@v1.0.0
 
       - name: Compile openwrt
         run: |
@@ -48,7 +56,7 @@ jobs:
           cp lede/bin/targets/*/*/*.tar.gz ./openwrt
           sudo ./gen_openwrt -d -k latest
           
-          devices=("phicomm-n1" "rk3328" "s9xxx" "vplus")
+          devices=("phicomm-n1")
           cd out
           for x in ${devices[*]}; do
             cd $x
