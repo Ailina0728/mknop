@@ -14,6 +14,7 @@ cd lede
     git clone https://github.com/lisaac/luci-lib-docker
     git clone https://github.com/lisaac/luci-app-dockerman
     git clone https://github.com/apollo-ng/luci-theme-darkmatter
+    git clone https://github.com/kenzok8/small
     git clone https://github.com/ysc3839/luci-proto-minieap
     git clone https://github.com/rufengsuixing/luci-app-onliner
     # git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom
