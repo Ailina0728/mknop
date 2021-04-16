@@ -5,9 +5,7 @@ cd lede
 (
     cd package
     git clone https://github.com/tuanqing/install-program
-    git clone https://github.com/tuanqing/openwrt-mentohust
-    git clone https://github.com/tuanqing/luci-app-mentohust
-    # git clone https://github.com/jerrykuku/luci-app-jd-dailybonus
+    git clone https://github.com/jerrykuku/luci-app-jd-dailybonus
     git clone https://github.com/jerrykuku/luci-app-ttnode
     # git clone https://github.com/jerrykuku/luci-theme-argon -b 18.06
     # git clone https://github.com/jerrykuku/luci-app-argon-config
@@ -15,7 +13,6 @@ cd lede
     git clone https://github.com/lisaac/luci-app-dockerman
     git clone https://github.com/apollo-ng/luci-theme-darkmatter
     git clone https://github.com/kenzok8/small
-    git clone https://github.com/ysc3839/luci-proto-minieap
     git clone https://github.com/rufengsuixing/luci-app-onliner
     # git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom
     git clone https://github.com/tindy2013/openwrt-subconverter
