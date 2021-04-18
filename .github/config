@@ -67,10 +67,10 @@ EOF
 
 ./scripts/feeds update -a
 
-#(
- #   cd lede/feeds/small8
- #   rm -rf {adguardhome,luci-app-adguardhome,luci-app-aliddns,luci-app-gost,luci-app-bypass,luci-app-jd-dailybonus}
-#)
+(
+    cd lede/feeds/small8
+    rm -rf {adguardhome,luci-app-adguardhome,luci-app-aliddns,luci-app-gost,luci-app-bypass,luci-app-jd-dailybonus}
+)
 
 ./scripts/feeds install -a
 
