@@ -11,14 +11,14 @@ cd lede
     # git clone https://github.com/jerrykuku/luci-app-argon-config
     git clone https://github.com/lisaac/luci-lib-docker
     git clone https://github.com/lisaac/luci-app-dockerman
-    #git clone https://github.com/apollo-ng/luci-theme-darkmatter
-    #git clone https://github.com/kenzok8/small
-    #git clone https://github.com/rufengsuixing/luci-app-onliner
-   # git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom
-    #git clone https://github.com/tindy2013/openwrt-subconverter
-    #git clone https://github.com/zcy85611/openwrt-luci-kcp-udp
-   #git clone https://github.com/destan19/OpenAppFilter
-   # git clone https://github.com/rosywrt/luci-theme-rosy
+    git clone https://github.com/apollo-ng/luci-theme-darkmatter
+    git clone https://github.com/kenzok8/small
+    git clone https://github.com/rufengsuixing/luci-app-onliner
+    git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom
+    git clone https://github.com/tindy2013/openwrt-subconverter
+    git clone https://github.com/zcy85611/openwrt-luci-kcp-udp
+    git clone https://github.com/destan19/OpenAppFilter
+    #git clone https://github.com/rosywrt/luci-theme-rosy
     
 
     sed -i 's/+docker-ce/+docker +dockerd/' luci-app-dockerman/applications/luci-app-dockerman/Makefile
@@ -28,7 +28,7 @@ cd lede
    # svn co https://github.com/Lienol/openwrt/trunk/package/libs/{libaudit,libsemanage,musl-fts,nettle} libs
     git clone https://github.com/immortalwrt/immortalwrt -b openwrt-18.06 immortalwrt
     cp -r immortalwrt/package/libs/{libaudit,libsemanage,musl-fts,nettle} libs/
-    #rm -rf immortalwrt
+    rm -rf immortalwrt
 )
 
 cat >feeds.conf.default <<-EOF
@@ -37,14 +37,14 @@ src-git packages https://github.com/Lienol/openwrt-packages.git;main
 src-git routing https://git.openwrt.org/feed/routing.git
 src-git telephony https://git.openwrt.org/feed/telephony.git
 #src-git helloworld https://github.com/fw876/helloworld.git
-#src-git small8 https://github.com/kenzok8/small-package
+src-git small8 https://github.com/kenzok8/small-package
 EOF
 
 ./scripts/feeds update -a
 
 #(
  #   cd lede/feeds/small8
- #   rm -rf {adguardhome,luci-app-adguardhome,luci-app-aliddns,luci-app-gost,luci-app-bypass}
+ #   rm -rf {adguardhome,luci-app-adguardhome,luci-app-aliddns,luci-app-gost,luci-app-bypass,luci-app-jd-dailybonus}
 #)
 
 ./scripts/feeds install -a
