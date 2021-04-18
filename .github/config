@@ -28,7 +28,7 @@ cd lede
    # svn co https://github.com/Lienol/openwrt/trunk/package/libs/{libaudit,libsemanage,musl-fts,nettle} libs
     git clone https://github.com/Lienol/openwrt lienol-openwrt
     cp -r lienol-openwrt/package/libs/{libaudit,libsemanage,musl-fts,nettle} libs/
-    rm -rf lienol-openwrt
+    #rm -rf lienol-openwrt
 )
 
 cat >feeds.conf.default <<-EOF
