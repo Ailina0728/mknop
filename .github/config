@@ -26,9 +26,9 @@ cd lede
     rm -rf libs/nettle
     rm -rf lean/{samba4,luci-app-samba4,luci-theme-argon,luci-lib-docker}
    # svn co https://github.com/Lienol/openwrt/trunk/package/libs/{libaudit,libsemanage,musl-fts,nettle} libs
-    git clone https://github.com/Lienol/openwrt lienol-openwrt
-    cp -r lienol-openwrt/package/libs/{libaudit,libsemanage,musl-fts,nettle} libs/
-    #rm -rf lienol-openwrt
+    git clone https://github.com/immortalwrt/immortalwrt -b openwrt-18.06 immortalwrt
+    cp -r immortalwrt/package/libs/{libaudit,libsemanage,musl-fts,nettle} libs/
+    #rm -rf immortalwrt
 )
 
 cat >feeds.conf.default <<-EOF
