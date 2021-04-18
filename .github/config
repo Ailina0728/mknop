@@ -11,14 +11,14 @@ cd lede
     # git clone https://github.com/jerrykuku/luci-app-argon-config
     git clone https://github.com/lisaac/luci-lib-docker
     git clone https://github.com/lisaac/luci-app-dockerman
-    git clone https://github.com/apollo-ng/luci-theme-darkmatter
-    git clone https://github.com/kenzok8/small
-    git clone https://github.com/rufengsuixing/luci-app-onliner
-    git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom
-    git clone https://github.com/tindy2013/openwrt-subconverter
-    git clone https://github.com/zcy85611/openwrt-luci-kcp-udp
-    git clone https://github.com/destan19/OpenAppFilter
-    git clone https://github.com/rosywrt/luci-theme-rosy
+    #git clone https://github.com/apollo-ng/luci-theme-darkmatter
+    #git clone https://github.com/kenzok8/small
+    #git clone https://github.com/rufengsuixing/luci-app-onliner
+   # git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom
+    #git clone https://github.com/tindy2013/openwrt-subconverter
+    #git clone https://github.com/zcy85611/openwrt-luci-kcp-udp
+   #git clone https://github.com/destan19/OpenAppFilter
+   # git clone https://github.com/rosywrt/luci-theme-rosy
     
 
     sed -i 's/+docker-ce/+docker +dockerd/' luci-app-dockerman/applications/luci-app-dockerman/Makefile
