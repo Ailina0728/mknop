@@ -42,8 +42,8 @@ jobs:
           chmod +x $CONFIG
           ./$CONFIG
           
-      - name: SSH connection to Actions
-        uses: P3TERX/ssh2actions@v1.0.0
+ #     - name: SSH connection to Actions
+ #       uses: P3TERX/ssh2actions@v1.0.0
 
       - name: Compile openwrt
         run: |
