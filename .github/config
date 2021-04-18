@@ -32,8 +32,8 @@ cd lede
     git clone https://github.com/tuanqing/install-program
     git clone https://github.com/jerrykuku/luci-app-jd-dailybonus
     git clone https://github.com/jerrykuku/luci-app-ttnode
-    # git clone https://github.com/jerrykuku/luci-theme-argon -b 18.06
-    # git clone https://github.com/jerrykuku/luci-app-argon-config
+    git clone https://github.com/jerrykuku/luci-theme-argon -b 18.06
+    git clone https://github.com/jerrykuku/luci-app-argon-config
     git clone https://github.com/lisaac/luci-lib-docker
     git clone https://github.com/lisaac/luci-app-dockerman
     git clone https://github.com/apollo-ng/luci-theme-darkmatter
@@ -69,7 +69,7 @@ EOF
 
 (
     cd lede/feeds/small8
-    rm -rf {adguardhome,luci-app-adguardhome,luci-app-aliddns,luci-app-gost,luci-app-bypass,luci-app-jd-dailybonus}
+    rm -rf {adguardhome,luci-app-adguardhome,luci-app-aliddns,luci-app-gost,luci-app-bypass,luci-app-jd-dailybonus,luci-theme-argon,luci-app-argon-config}
 )
 
 ./scripts/feeds install -a
