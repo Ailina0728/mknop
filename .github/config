@@ -68,7 +68,7 @@ EOF
 ./scripts/feeds update -a
 
 pushd feeds/small8
-rm -rf {adguardhome,luci-app-adguardhome,luci-app-aliddns,gost,luci-app-gost,luci-app-bypass,luci-app-jd-dailybonus,luci-theme-argon,luci-app-argon-config}
+rm -rf {luci-app-aliddns,gost,luci-app-gost,luci-app-bypass,luci-app-jd-dailybonus,luci-theme-argon,luci-app-argon-config}
 popd
 ./scripts/feeds install -a
 
