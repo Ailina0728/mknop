@@ -67,11 +67,9 @@ EOF
 
 ./scripts/feeds update -a
 
-(
-    cd lede/feeds/small8
-    rm -rf {adguardhome,luci-app-adguardhome,luci-app-aliddns,gost,luci-app-gost,luci-app-bypass,luci-app-jd-dailybonus,luci-theme-argon,luci-app-argon-config}
-)
-
+pushd feeds/small8
+rm -rf {adguardhome,luci-app-adguardhome,luci-app-aliddns,gost,luci-app-gost,luci-app-bypass,luci-app-jd-dailybonus,luci-theme-argon,luci-app-argon-config}
+popd
 ./scripts/feeds install -a
 
 sed -i '/+libmount/d' feeds/packages/utils/btrfs-progs/Makefile
