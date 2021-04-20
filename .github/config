@@ -65,11 +65,11 @@ src-git telephony https://git.openwrt.org/feed/telephony.git
 src-git small8 https://github.com/kenzok8/small-package
 EOF
 
-./scripts/feeds update -a
-
 pushd feeds/small8
 rm -rf {luci-app-aliddns,gost,luci-app-gost,luci-app-bypass,luci-app-jd-dailybonus,luci-theme-argon,luci-app-argon-config}
 popd
+
+./scripts/feeds update -a
 ./scripts/feeds install -a
 
 sed -i '/+libmount/d' feeds/packages/utils/btrfs-progs/Makefile
